@@ -1,0 +1,30 @@
+<div class="bg">
+  <div class="card">
+    <h2>Registrarse</h2>
+    <!--BEGIN: CAMBIOS AQUI-->
+    <form >
+      <div>
+        <label>Nombre</label>
+        <input [(ngModel)]="formData.name" name="nombre" id="name" type="text" />
+      </div>
+      <div>
+        <label>Correo Electrónico</label>
+        <input [(ngModel)]="formData.email" name="Correo" id="email" type="email" />
+      </div>
+      <div>
+        <label>Nombre de Usuario</label>
+        <input [(ngModel)]="formData.username" name="usuario" id="name" type="text" />
+      </div>
+      <div>
+        <label>Contraseña</label>
+        <input [(ngModel)]="formData.password" name="pass" id="password" type="password" />
+      </div>
+      <div>
+        <label>Confirmar Contraseña</label>
+        <input id="confirmPassword" type="password" />
+      </div>
+      <button (click)="submitForm()" type="submit">Enviar</button>
+    </form>
+    <!--END: CAMBIOS AQUI-->
+  </div>
+</div>

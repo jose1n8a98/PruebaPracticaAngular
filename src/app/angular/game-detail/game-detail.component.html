@@ -1,0 +1,25 @@
+<div class="bg">
+  <div class="card">
+    <h2 class="title">Editar Juego</h2>
+    <!--BEGIN: TUS CAMBIOS AQUI-->
+    <form>
+      <div class="field">
+        <label for="id">Id</label>
+        <input [(ngModel)]="game.id" name="id" id="id" type="text" disabled />
+      </div>
+      <div class="field">
+        <label for="name">Nombre</label>
+        <input [(ngModel)]="game.name" name="name" id="name" type="text" />
+      </div>
+      <div class="field">
+        <label for="name">Descripción</label>
+        <textarea [(ngModel)]="game.description" name="description" id="name" type="text"></textarea>
+      </div>
+      <div class="actions">
+        <button (click)="Actualizar()"  type="submit" class="btn-primary">Actualizar</button>
+        <a href="/angular/senior/games" class="btn-secondary">Cancelar</a>
+      </div>
+    </form>
+    <!--END: TUS CAMBIOS AQUI-->
+  </div>
+</div>
